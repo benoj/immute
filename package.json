@@ -4,6 +4,9 @@
 	"description": "Simple utility for creating immutable value objects in node",
 	"author": "Ben Flowers",
 	"version":"0.0.1",
+	"dependencies": {
+		"underscore": "*"
+		},
 	"devDependencies" : {
 		"mocha" : "*",
 		"chai" : "*"
