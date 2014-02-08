@@ -1,0 +1,8 @@
+{
+	"repository" : "https://github.com/benoj/immute",
+	"name": "Immute",
+	"dependencies" : {
+		"mocha" : "*",
+		"chai" : "*"
+	}
+}
