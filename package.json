@@ -1,6 +1,8 @@
 {
 	"repository" : "https://github.com/benoj/immute",
-	"name": "Immute",
+	"name": "immute",
+	"author": "Ben Flowers",
+	"version":"0.0.1",
 	"dependencies" : {
 		"mocha" : "*",
 		"chai" : "*"
