@@ -1,10 +1,14 @@
 {
 	"repository" : "https://github.com/benoj/immute",
 	"name": "immute",
+	"description": "Simple utility for creating immutable value objects in node",
 	"author": "Ben Flowers",
 	"version":"0.0.1",
-	"dependencies" : {
+	"devDependencies" : {
 		"mocha" : "*",
 		"chai" : "*"
+	},
+	"scripts": {
+		"test": "mocha ./test/tests.js --ui tdd --reporter nyan"
 	}
 }
