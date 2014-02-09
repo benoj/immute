@@ -19,3 +19,12 @@ test('When object constructor is created, Then properties are set with correct v
 
 	expect(_.pairs(immutableKitty)).to.deep.equal(_.pairs(objectValues));
 });
+
+test('When object is created without required parameter, Then exception thrown',function(){
+	var objectDefinition = {name: "required", cuteness: "required"};
+		Kitty = immute(objectDefinition);
+
+	expect(function(){
+		new Kitty({name: "Wayne"});
+	}).to.throw('Required field missing from immutable object');
+});
