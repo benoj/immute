@@ -5,6 +5,7 @@
 	"author": "Ben Flowers",
 	"version":"1.0.0",
 	"keywords": ["immutable","immute","immutable value object","value object", "value", "OO","object orientated design","tdd"],
+	"main": "./immute.js",
 	"dependencies": {
 		"underscore": "*"
 		},
