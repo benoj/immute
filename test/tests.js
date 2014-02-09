@@ -46,3 +46,12 @@ test('When constructor is created with optional parameter and object does not de
 		expect(Object.keys(immutableKitty)).to.not.include("fluffyness");
 });
 
+test('When object is created and a property is updated, Then exception is thrown',function(){
+	var objectDefinition =  {name: "required", cuteness: "required"},
+		Kitty = immute(objectDefinition);
+	
+	var immutableKitty = new Kitty({name: "sheldon",cuteness: "10"});
+	expect(function(){
+		immutableKitty.cuteness = "9";
+	}).to.throw('Immutable value object. Property cannot be changed');
+});
