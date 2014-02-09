@@ -38,3 +38,11 @@ test('When constructor is created with optional parameter and object does not de
 	}).to.not.throw('Required field missing from immutable object');
 });
 
+
+test('When constructor is created with optional parameter and object does not define it, Then created object does not have the optional key',function(){
+	var objectDefinition = {name: "required", cuteness: "required", fluffyness: "optional"};
+		Kitty = immute(objectDefinition);
+		var immutableKitty = new Kitty({name: "Wayne", cuteness:"10"});
+		expect(Object.keys(immutableKitty)).to.not.include("fluffyness");
+});
+

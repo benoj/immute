@@ -10,7 +10,9 @@ module.exports = function(objectDefinition){
 			if(!options[key] && objectDefinition[key] === "required"){
 				throw MISSING_REQUIRED_PROPERTY_ERROR;
 			}
-			object[key] = options[key];
+			if(options[key]){
+				object[key] = options[key];
+			}
 		});
 		return object;
 	};
