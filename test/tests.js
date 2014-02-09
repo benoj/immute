@@ -55,3 +55,12 @@ test('When object is created and a property is updated, Then exception is thrown
 		immutableKitty.cuteness = "9";
 	}).to.throw('Immutable value object. Property cannot be changed');
 });
+
+test('When object is created and a property is updated, Then exception is thrown',function(){
+	var objectDefinition =  {name: "required", cuteness: "required"},
+		Kitty = immute(objectDefinition);
+	
+	var immutableKitty = new Kitty({name: "sheldon",cuteness: "10"});
+	immutableKitty.bob = "asdasd";
+	expect(Object.keys(immutableKitty)).to.not.include("bob");
+});
