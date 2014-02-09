@@ -3,7 +3,8 @@
 	"name": "immute",
 	"description": "Simple utility for creating immutable value objects in node",
 	"author": "Ben Flowers",
-	"version":"0.0.1",
+	"version":"1.0.0",
+	"keywords": ["immutable","immute","immutable value object","value object", "value", "OO","object orientated design","tdd"],
 	"dependencies": {
 		"underscore": "*"
 		},
