@@ -28,3 +28,13 @@ test('When object is created without required parameter, Then exception thrown',
 		new Kitty({name: "Wayne"});
 	}).to.throw('Required field missing from immutable object');
 });
+
+test('When constructor is created with optional parameter and object does not define it, Then no exception thrown',function(){
+	var objectDefinition = {name: "required", cuteness: "required", fluffyness: "optional"};
+		Kitty = immute(objectDefinition);
+
+	expect(function(){
+		new Kitty({name: "Wayne", cuteness:"10"});
+	}).to.not.throw('Required field missing from immutable object');
+});
+

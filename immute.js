@@ -7,7 +7,7 @@ module.exports = function(objectDefinition){
 	return function(options){
 		var object = {};
 		_.each(objectDefinitionKeys,function(key){
-			if(!options[key]){
+			if(!options[key] && objectDefinition[key] === "required"){
 				throw MISSING_REQUIRED_PROPERTY_ERROR;
 			}
 			object[key] = options[key];
