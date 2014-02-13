@@ -1,7 +1,7 @@
 Immute
 ======
 [![Build Status](https://drone.io/github.com/benoj/immute/status.png)](https://drone.io/github.com/benoj/immute/latest)
-
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/benoj/immute/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 Description
 -----------
 
