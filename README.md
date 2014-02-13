@@ -49,3 +49,7 @@ Object.keys(cuddles); // ['name','birthDate','description']
 
 
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/benoj/immute/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
